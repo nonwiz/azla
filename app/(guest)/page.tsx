@@ -37,7 +37,7 @@ export default function Home() {
             <div className="font-sans w-[500px] tracking-widest text-2xl">
               <p>
                 I am passionate about public health, particularly in mental
-                health. I am currently based in Malaysia. I've been working as a
+                health. I am currently based in Malaysia. I&apos;ve been working as a
                 volunteer at Thrive Well for the past two months and am ready to
                 expand my knowledge and gain further experience in the public
                 health field.{" "}

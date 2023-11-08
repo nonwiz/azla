@@ -1,5 +1,5 @@
 export const siteConfig = {
-    name: "azmo/discover",
+    name: "Azla Jonuling",
     url: "https://azmo.page",
     ogImage: "https://ui.azmo.com/og.jpg",
     description:

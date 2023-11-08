@@ -1,11 +1,27 @@
 import { fontJosefin } from "@/lib/fonts";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
+
+const MobileTitle = (text: string) => {
+  return (
+    <h2 className="hidden md:block md:absolute inset-x-0 top-0 mt-20 text-center h-16 w-full font-bold text-white text-4xl">
+      <span className="drop-shadow-lg">{text}</span>
+    </h2>
+  );
+};
 
 export default function Home() {
   return (
     <>
       <main className="snap-y snap-mandatory h-screen overflow-scroll">
         <section className="snap-start relative w-full h-screen">
+          <h1 className="my-20 pt-20 text-center w-full font-bold text-primary text-4xl md:hidden">
+            <span className="drop-shadow-lg">AZLA JONULING </span>
+            <br />
+            <span className="italic font-semibold text-3xl md:text-5xl">
+              PORTFOLIO
+            </span>
+          </h1>
           <Image
             src="/jonong.jpg"
             alt="Miss Azla photo"
@@ -13,15 +29,23 @@ export default function Home() {
             height={800}
             className="w-full object-cover h-[600px] md:h-screen grayscale"
           />
-          <h1 className="absolute inset-x-0 top-0 mt-20 text-center h-16 w-full font-bold text-white text-4xl md:text-8xl">
+          <h1 className="hidden md:block md:absolute inset-x-0 top-0 mt-20 text-center h-16 w-full font-bold text-white text-4xl md:text-8xl">
             <span className="drop-shadow-lg">AZLA JONULING </span>
             <br />
-            <span className="italic font-semibold text-3xl md:text-5xl">PORTFOLIO</span>
+            <span className="italic font-semibold text-3xl md:text-5xl">
+              PORTFOLIO
+            </span>
           </h1>
         </section>
         <section className="snap-start relative w-screen h-screen p-2 md:p-[10vw] font-sans tracking-widest">
           <div className="flex flex-col md:flex-row gap-2 justify-between">
-            <h2 className="text-4xl md:text-7xl w-full md:w-[30vw]">
+            <h2
+              className="p-10 text-4xl w-full text-center md:hidden"
+              data-view="mobile"
+            >
+              A LITTLE ABOUT ME
+            </h2>
+            <h2 className="hidden md:block text-4xl md:text-7xl w-full md:w-[30vw]">
               A LITTLE
               <br /> ABOUT ME
             </h2>
@@ -30,17 +54,17 @@ export default function Home() {
               alt="Miss Azla photo"
               width={400}
               height={250}
-              className="w-[500px] object-cover grayscale hover:grayscale-0 -ml-[24vw]"
+              className="w-[500px] object-cover grayscale hover:grayscale-0 md:-ml-[24vw]"
             />
           </div>
-          <div className="flex flex-row justify-between">
-            <div className="font-sans w-[500px] tracking-widest text-2xl">
+          <div className="flex flex-col md:flex-row items-center md:justify-between">
+            <div className="my-8 md:my-1 font-sans w-full md:w-[500px] tracking-widest text-md md:text-2xl">
               <p>
                 I am passionate about public health, particularly in mental
-                health. I am currently based in Malaysia. I&apos;ve been working as a
-                volunteer at Thrive Well for the past two months and am ready to
-                expand my knowledge and gain further experience in the public
-                health field.{" "}
+                health. I am currently based in Malaysia. I&apos;ve been working
+                as a volunteer at Thrive Well for the past two months and am
+                ready to expand my knowledge and gain further experience in the
+                public health field.{" "}
               </p>
             </div>
             <div>
@@ -62,8 +86,8 @@ export default function Home() {
             </h2>
             <div></div>
           </div>
-          <div className="flex flex-row justify-between mt-24">
-            <div className="font-sans w-[500px] tracking-widest text-2xl font-extralight">
+          <div className="flex flex-col md:flex-row justify-between mt-10 md:mt-24">
+            <div className="font-sans md:w-[500px] tracking-widest text-md md:text-2xl font-extralight">
               <h3 className={fontJosefin.className + " font-bold text-3xl"}>
                 Agency work
               </h3>
@@ -84,7 +108,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="font-sans w-[500px] tracking-widest text-2xl -mt-12 font-extralight">
+            <div className="font-sans md:w-[500px] tracking-widest text-2xl mt-12 md:-mt-12 font-extralight">
               <h3 className={fontJosefin.className + " font-bold text-3xl"}>
                 Activities
               </h3>
@@ -107,7 +131,7 @@ export default function Home() {
                 alt="Miss Azla photo"
                 width={200}
                 height={250}
-                className="rotate-12 pt-20 object-cover grayscale hover:grayscale-0"
+                className="rotate-12 pt-20 object-cover grayscale hover:grayscale-0 hidden md:block"
               />
             </div>
           </div>
@@ -143,7 +167,7 @@ export default function Home() {
           <div className="flex flex-col gap-8 text-center mx-auto items-center">
             <h2 className="text-7xl">REFERENCES</h2>
           </div>
-          <div className="flex flex-row justify-between text-center mt-40 tracking-widest text-2xl font-sans">
+          <div className="flex flex-col md:flex-row justify-between text-center mt-40 tracking-widest text-md md:text-2xl font-sans gap-8">
             <div>
               <p>DR MAXINE NEWELL,</p>
               <p>ADVISOR OF COMMUNITY PUBLIC HEALTH PROGRAM</p>
@@ -183,13 +207,12 @@ export default function Home() {
           <div className="flex flex-row justify-between mt-28">
             <div
               className={
-                "font-bold w-[500px] tracking-widest text-3xl " +
+                "font-bold w-[700px] md:w-[500px] tracking-widest text-md md:text-3xl " +
                 fontJosefin.className
               }
             >
-              <p>linkedin.com/in/azla</p>
-              <p>+60 108889701</p>
-              <p>azlasorubou83@gmail.com</p>
+              <p><ArrowRightIcon className="inline pb-1"/> linkedin.com/in/azla</p>
+              <p><ArrowRightIcon className="inline"/> azlasorubou83@gmail.com</p>
             </div>
             <div>
               <Image
@@ -197,7 +220,7 @@ export default function Home() {
                 alt="Miss Azla photo"
                 width={400}
                 height={200}
-                className="rotate-12 pt-20 object-cover grayscale hover:grayscale-0 -mt-80"
+                className="rotate-12 pt-20 object-cover grayscale hover:grayscale-0 mt-20 md:-mt-80"
               />
             </div>
           </div>

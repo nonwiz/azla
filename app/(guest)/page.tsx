@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <main className="snap-y snap-mandatory h-screen overflow-scroll">
         <section className="snap-start relative w-full h-screen">
-          <h1 className="my-20 pt-20 text-center w-full font-bold text-primary text-4xl md:hidden">
+          <h1 className="my-10 pt-10 text-center w-full font-bold text-primary text-4xl md:hidden">
             <span className="drop-shadow-lg">AZLA JONULING </span>
             <br />
             <span className="italic font-semibold text-3xl md:text-5xl">
@@ -27,7 +27,7 @@ export default function Home() {
             alt="Miss Azla photo"
             width={1000}
             height={800}
-            className="w-full object-cover h-[600px] md:h-screen grayscale"
+            className="w-full object-cover h-[400px] md:h-screen grayscale"
           />
           <h1 className="hidden md:block md:absolute inset-x-0 top-0 mt-20 text-center h-16 w-full font-bold text-white text-4xl md:text-8xl">
             <span className="drop-shadow-lg">AZLA JONULING </span>
@@ -73,14 +73,14 @@ export default function Home() {
                 alt="Miss Azla photo"
                 width={200}
                 height={250}
-                className="rotate-12 pt-20 object-cover grayscale hover:grayscale-0"
+                className="rotate-12 pt-20 object-cover grayscale hover:grayscale-0 hidden md:block"
               />
             </div>
           </div>
         </section>
-        <section className="snap-start relative w-screen h-screen p-[10vw] font-sans tracking-widest">
+        <section className="snap-start relative w-screen h-screen p-2 pt-4 md:p-[10vw] font-sans tracking-widest">
           <div className="flex flex-row gap-2 justify-between">
-            <h2 className="text-7xl w-[30vw]">
+            <h2 className="text-5xl md:text-7xl w-[30vw]">
               WORK
               <br /> EXPERIENCE
             </h2>
@@ -88,7 +88,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col md:flex-row justify-between mt-10 md:mt-24">
             <div className="font-sans md:w-[500px] tracking-widest text-md md:text-2xl font-extralight">
-              <h3 className={fontJosefin.className + " font-bold text-3xl"}>
+              <h3 className={fontJosefin.className + " font-bold text-xl md:text-3xl"}>
                 Agency work
               </h3>
               <p className="mt-4">
@@ -108,8 +108,8 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="font-sans md:w-[500px] tracking-widest text-2xl mt-12 md:-mt-12 font-extralight">
-              <h3 className={fontJosefin.className + " font-bold text-3xl"}>
+            <div className="font-sans md:w-[500px] tracking-widest text-md md:text-2xl mt-12 md:-mt-12 font-extralight">
+              <h3 className={fontJosefin.className + " font-bold text-xl md:text-3xl"}>
                 Activities
               </h3>
               <p className="mt-4">
@@ -139,7 +139,7 @@ export default function Home() {
 
         <section className="snap-start relative w-screen h-screen p-[10vw] font-sans tracking-widest mx-auto">
           <div className="flex flex-col gap-8 text-center mx-auto items-center">
-            <h2 className="text-7xl">
+            <h2 className="text-4xl md:text-7xl">
               CORE <br />
               PROCIENCIES
             </h2>
@@ -152,7 +152,7 @@ export default function Home() {
             />
           </div>
           <div className="flex flex-row justify-between text-center mt-8">
-            <div className="font-sans w-full tracking-widest text-2xl">
+            <div className="font-sans w-full tracking-widest text-xl md:text-2xl">
               <p>
                 Public Health Knowledge | Community Outreach | Fundraising |
                 Education | Health Promotion | Mental Health | Program
@@ -165,9 +165,9 @@ export default function Home() {
 
         <section className="snap-start relative w-screen h-screen p-[10vw] font-sans tracking-widest mx-auto">
           <div className="flex flex-col gap-8 text-center mx-auto items-center">
-            <h2 className="text-7xl">REFERENCES</h2>
+            <h2 className="text-4xl md:text-7xl">REFERENCES</h2>
           </div>
-          <div className="flex flex-col md:flex-row justify-between text-center mt-40 tracking-widest text-md md:text-2xl font-sans gap-8">
+          <div className="flex flex-col md:flex-row justify-between text-center mt-20 md:mt-40 tracking-widest text-md md:text-2xl font-sans gap-8">
             <div>
               <p>DR MAXINE NEWELL,</p>
               <p>ADVISOR OF COMMUNITY PUBLIC HEALTH PROGRAM</p>
@@ -211,8 +211,8 @@ export default function Home() {
                 fontJosefin.className
               }
             >
-              <p><ArrowRightIcon className="inline pb-1"/> linkedin.com/in/azla</p>
-              <p><ArrowRightIcon className="inline"/> azlasorubou83@gmail.com</p>
+              <p className="flex flex-row gap-2 items-center"><ArrowRightIcon/> linkedin.com/in/azla</p>
+              <p className="flex flex-row gap-2 items-center"><ArrowRightIcon /> azlasorubou83@gmail.com</p>
             </div>
             <div>
               <Image

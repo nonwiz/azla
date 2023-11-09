@@ -128,7 +128,7 @@ export default function Home() {
             </div>
             <div>
               <Image
-                src="/graduated_portrait.jpg"
+                src="/azla_a.JPG"
                 alt="Miss Azla photo"
                 width={200}
                 height={250}

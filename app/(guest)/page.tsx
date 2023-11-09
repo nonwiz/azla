@@ -211,12 +211,21 @@ export default function Home() {
                 fontJosefin.className
               }
             >
-              <p className="flex flex-row gap-2 items-center">
-                <ArrowRightIcon /> linkedin.com/in/azla
-              </p>
-              <p className="flex flex-row gap-2 items-center">
-                <ArrowRightIcon /> azlasorubou83@gmail.com
-              </p>
+              <a href="/resume.pdf" target="_blank">
+                <p className="flex flex-row gap-2 items-center">
+                  <ArrowRightIcon /> my resume
+                </p>
+              </a>
+              <a href="linkedin.com/in/azla" target="_blank">
+                <p className="flex flex-row gap-2 items-center">
+                  <ArrowRightIcon /> linkedin.com/in/azla
+                </p>
+              </a>
+              <a href="mailto:azlasorubou83@gmail.com" target="_blank">
+                <p className="flex flex-row gap-2 items-center">
+                  <ArrowRightIcon /> azlasorubou83@gmail.com
+                </p>
+              </a>
             </div>
             <div>
               <Image

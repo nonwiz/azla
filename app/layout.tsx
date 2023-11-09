@@ -2,15 +2,13 @@ import "./globals.css";
 
 import { Metadata } from "next";
 
-import { siteConfig } from "@/config/site";
-import { fontJosefin, fontSans } from "@/lib/fonts";
-import { cn } from "@/lib/utils";
 import { Analytics } from "@/components/analytics";
 import { ThemeProvider } from "@/components/providers";
-import { SiteFooter } from "@/components/site-footer";
-import { SiteHeader } from "@/components/site-header";
 import { TailwindIndicator } from "@/components/tailwind-indicator";
 import { ThemeSwitcher } from "@/components/theme-switcher";
+import { siteConfig } from "@/config/site";
+import { fontJosefin } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: {
@@ -55,7 +53,7 @@ export const metadata: Metadata = {
     title: siteConfig.name,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
-    creator: "@shadcn",
+    creator: "Azla Jonuling",
   },
   icons: {
     icon: "/logo.png",
@@ -73,7 +71,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <head />
+        <head>
+          <link rel="icon" href={"/logo.png"} type="image/x-icon" sizes="any" />
+        </head>
         <body
           className={cn(
             "min-h-screen bg-background antialiased",

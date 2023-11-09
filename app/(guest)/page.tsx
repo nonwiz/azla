@@ -2,13 +2,6 @@ import { fontJosefin } from "@/lib/fonts";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
-const MobileTitle = (text: string) => {
-  return (
-    <h2 className="hidden md:block md:absolute inset-x-0 top-0 mt-20 text-center h-16 w-full font-bold text-white text-4xl">
-      <span className="drop-shadow-lg">{text}</span>
-    </h2>
-  );
-};
 
 export default function Home() {
   return (

@@ -2,7 +2,6 @@ import { fontJosefin } from "@/lib/fonts";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import Image from "next/image";
 
-
 export default function Home() {
   return (
     <>
@@ -30,15 +29,15 @@ export default function Home() {
             </span>
           </h1>
         </section>
-        <section className="snap-start relative w-screen h-screen p-2 md:p-[10vw] font-sans tracking-widest">
+        <section className="snap-start relative w-screen h-screen p-2 md:p-[8vw] font-sans tracking-widest">
           <div className="flex flex-col md:flex-row gap-2 justify-between">
             <h2
-              className="p-10 text-4xl w-full text-center md:hidden"
+              className="p-10 md:p-2 text-4xl w-full text-center md:hidden"
               data-view="mobile"
             >
               A LITTLE ABOUT ME
             </h2>
-            <h2 className="hidden md:block text-4xl md:text-7xl w-full md:w-[30vw]">
+            <h2 className="hidden md:block text-4xl md:text-7xl w-full md:w-[40vw]">
               A LITTLE
               <br /> ABOUT ME
             </h2>
@@ -47,11 +46,11 @@ export default function Home() {
               alt="Miss Azla photo"
               width={400}
               height={250}
-              className="w-[500px] object-cover grayscale hover:grayscale-0 md:-ml-[24vw]"
+              className="w-[350px] object-cover grayscale hover:grayscale-0 md:-ml-[24vw]"
             />
           </div>
-          <div className="flex flex-col md:flex-row items-center md:justify-between">
-            <div className="my-8 md:my-1 font-sans w-full md:w-[500px] tracking-widest text-md md:text-2xl">
+          <div className="flex flex-col md:flex-row items-center md:items-start md:justify-between">
+            <div className="my-8 md:my-1 font-sans w-full md:w-[500px] tracking-widest text-md md:text-xl">
               <p>
                 I am passionate about public health, particularly in mental
                 health. I am currently based in Malaysia. I&apos;ve been working
@@ -71,7 +70,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="snap-start relative w-screen h-auto lg:h-screen p-4 md:p-10 lg:p-[10vw] font-sans tracking-widest">
+        <section className="snap-start relative w-screen h-auto lg:h-screen p-4 sm:p-[5vw] lg:p-[5vw] font-sans tracking-widest">
           <div className="flex flex-row gap-2 justify-between">
             <h2 className="text-4xl md:text-7xl w-[30vw]">
               WORK
@@ -80,7 +79,7 @@ export default function Home() {
             <div></div>
           </div>
           <div className="flex flex-col md:flex-row justify-between mt-2 md:mt-24">
-            <div className="font-sans md:w-[500px] tracking-widest text-md md:text-2xl font-extralight">
+            <div className="font-sans md:w-[500px] tracking-widest text-md md:text-xl font-extralight">
               <h3
                 className={
                   fontJosefin.className + " font-bold text-xl md:text-3xl"
@@ -105,7 +104,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="font-sans md:w-[500px] tracking-widest text-md md:text-2xl mt-4 md:-mt-12 font-extralight">
+            <div className="font-sans md:w-[500px] tracking-widest text-md md:text-xl mt-4 md:-mt-12 font-extralight">
               <h3
                 className={
                   fontJosefin.className + " font-bold text-xl md:text-3xl"
@@ -138,8 +137,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="snap-start relative w-screen h-screen p-[10vw] font-sans tracking-widest mx-auto">
-          <div className="flex flex-col gap-8 text-center mx-auto items-center">
+        <section className="snap-start relative w-screen h-auto lg:h-screen p-[6vw] font-sans tracking-widest mx-auto">
+          <div className="flex flex-col gap-6 text-center mx-auto items-center">
             <h2 className="text-4xl md:text-7xl">
               CORE <br />
               PROCIENCIES
@@ -149,11 +148,11 @@ export default function Home() {
               alt="Miss Azla photo"
               width={400}
               height={250}
-              className="w-[500px] object-cover grayscale hover:grayscale-0 text-center"
+              className="w-[400px] object-cover grayscale hover:grayscale-0 text-center"
             />
           </div>
           <div className="flex flex-row justify-between text-center mt-8">
-            <div className="font-sans w-full tracking-widest text-xl md:text-2xl">
+            <div className="font-sans w-full tracking-widest text-xl md:text-xl">
               <p>
                 Public Health Knowledge | Community Outreach | Fundraising |
                 Education | Health Promotion | Mental Health | Program
@@ -164,11 +163,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="snap-start relative w-screen h-screen p-[10vw] font-sans tracking-widest mx-auto">
+        <section className="snap-start relative w-screen h-auto lg:h-screen p-[10vw] font-sans tracking-widest mx-auto">
           <div className="flex flex-col gap-8 text-center mx-auto items-center">
-            <h2 className="text-4xl md:text-7xl">REFERENCES</h2>
+            <h2 className="text-4xl md:text-5xl lg:text-7xl">REFERENCES</h2>
           </div>
-          <div className="flex flex-col md:flex-row justify-between text-center mt-20 md:mt-40 tracking-widest text-md md:text-2xl font-sans gap-8">
+          <div className="flex flex-col md:flex-row justify-between text-center mt-20 md:mt-40 tracking-widest text-md lg:text-2xl font-sans gap-4">
             <div>
               <p>DR MAXINE NEWELL,</p>
               <p>ADVISOR OF COMMUNITY PUBLIC HEALTH PROGRAM</p>
@@ -200,15 +199,15 @@ export default function Home() {
             <p className={fontJosefin.className + " text-2xl font-semibold"}>
               AZLA JONULING
             </p>
-            <h2 className="text-7xl">
+            <h2 className="text-5xl lg:text-7xl">
               WORK
               <br /> WITH ME
             </h2>
           </div>
-          <div className="flex flex-row justify-between mt-28">
+          <div className="flex flex-row justify-between mt-12">
             <div
               className={
-                "font-bold w-[700px] md:w-[500px] tracking-widest text-md md:text-3xl " +
+                "font-bold w-[700px] md:w-[500px] tracking-widest text-md text-xl lg:text-3xl " +
                 fontJosefin.className
               }
             >
@@ -223,9 +222,9 @@ export default function Home() {
               <Image
                 src="/graduated_portrait.jpg"
                 alt="Miss Azla photo"
-                width={400}
+                width={320}
                 height={200}
-                className="rotate-12 pt-20 object-cover grayscale hover:grayscale-0 mt-20 md:-mt-80"
+                className="rotate-12 pt-10 object-cover grayscale hover:grayscale-0 mt-20 md:-mt-80"
               />
             </div>
           </div>

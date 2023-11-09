@@ -78,17 +78,21 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="snap-start relative w-screen h-screen p-2 pt-4 md:p-[10vw] font-sans tracking-widest">
+        <section className="snap-start relative w-screen h-screen p-4 md:p-[10vw] font-sans tracking-widest">
           <div className="flex flex-row gap-2 justify-between">
-            <h2 className="text-5xl md:text-7xl w-[30vw]">
+            <h2 className="text-4xl md:text-7xl w-[30vw]">
               WORK
               <br /> EXPERIENCE
             </h2>
             <div></div>
           </div>
-          <div className="flex flex-col md:flex-row justify-between mt-10 md:mt-24">
+          <div className="flex flex-col md:flex-row justify-between mt-2 md:mt-24">
             <div className="font-sans md:w-[500px] tracking-widest text-md md:text-2xl font-extralight">
-              <h3 className={fontJosefin.className + " font-bold text-xl md:text-3xl"}>
+              <h3
+                className={
+                  fontJosefin.className + " font-bold text-xl md:text-3xl"
+                }
+              >
                 Agency work
               </h3>
               <p className="mt-4">
@@ -99,7 +103,7 @@ export default function Home() {
                 <span>ASSISTANT (SEPT 2023 - PRESENT)</span>
               </p>
 
-              <p className="mt-8">
+              <p className="mt-4 md:mt-8">
                 ADVENTIST DEVELOPMENT AND <br /> RELIEF AGENCY (ADRA)
               </p>
               <p>
@@ -108,20 +112,24 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="font-sans md:w-[500px] tracking-widest text-md md:text-2xl mt-12 md:-mt-12 font-extralight">
-              <h3 className={fontJosefin.className + " font-bold text-xl md:text-3xl"}>
+            <div className="font-sans md:w-[500px] tracking-widest text-md md:text-2xl mt-4 md:-mt-12 font-extralight">
+              <h3
+                className={
+                  fontJosefin.className + " font-bold text-xl md:text-3xl"
+                }
+              >
                 Activities
               </h3>
               <p className="mt-4">
                 COMMUNITY OUTREACH <br /> PROGRAMS | THAILAND, 2019 - 2021
               </p>
 
-              <p className="mt-8">
+              <p className="mt-2 md:mt-8">
                 MEDICAL MUSIC MISSION TRIP <br /> PHILIPPINES, DEC 2018 - JAN
                 2019
               </p>
 
-              <p className="mt-8">
+              <p className="mt-2 md:mt-8">
                 COMMUNITY OUTREACH PROGRAMS <br /> MALAYSIA, 2019
               </p>
             </div>
@@ -211,8 +219,12 @@ export default function Home() {
                 fontJosefin.className
               }
             >
-              <p className="flex flex-row gap-2 items-center"><ArrowRightIcon/> linkedin.com/in/azla</p>
-              <p className="flex flex-row gap-2 items-center"><ArrowRightIcon /> azlasorubou83@gmail.com</p>
+              <p className="flex flex-row gap-2 items-center">
+                <ArrowRightIcon /> linkedin.com/in/azla
+              </p>
+              <p className="flex flex-row gap-2 items-center">
+                <ArrowRightIcon /> azlasorubou83@gmail.com
+              </p>
             </div>
             <div>
               <Image

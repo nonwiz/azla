@@ -70,7 +70,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="snap-start relative w-screen h-auto lg:h-screen p-4 sm:p-[5vw] lg:p-[5vw] font-sans tracking-widest">
+        <section className="snap-start relative w-screen h-screen sm:h-auto lg:h-screen p-4 sm:p-[5vw] lg:p-[5vw] font-sans tracking-widest">
           <div className="flex flex-row gap-2 justify-between">
             <h2 className="text-4xl md:text-7xl w-[30vw]">
               WORK
@@ -137,7 +137,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="snap-start relative w-screen h-auto lg:h-screen p-[6vw] font-sans tracking-widest mx-auto">
+        <section className="snap-start relative w-screen h-screen sm:h-auto lg:h-screen p-[6vw] font-sans tracking-widest mx-auto">
           <div className="flex flex-col gap-6 text-center mx-auto items-center">
             <h2 className="text-4xl md:text-7xl">
               CORE <br />
@@ -163,7 +163,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="snap-start relative w-screen h-auto lg:h-screen p-[10vw] font-sans tracking-widest mx-auto">
+        <section className="snap-start relative w-screen h-screen sm:h-auto lg:h-screen p-[10vw] font-sans tracking-widest mx-auto">
           <div className="flex flex-col gap-8 text-center mx-auto items-center">
             <h2 className="text-4xl md:text-5xl lg:text-7xl">REFERENCES</h2>
           </div>

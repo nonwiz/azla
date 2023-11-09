@@ -71,7 +71,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className="snap-start relative w-screen h-screen p-4 md:p-[10vw] font-sans tracking-widest">
+        <section className="snap-start relative w-screen h-auto lg:h-screen p-4 md:p-10 lg:p-[10vw] font-sans tracking-widest">
           <div className="flex flex-row gap-2 justify-between">
             <h2 className="text-4xl md:text-7xl w-[30vw]">
               WORK

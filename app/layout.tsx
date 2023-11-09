@@ -18,7 +18,14 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: ["Public health", "Mental health"],
+  keywords: [
+    "Public health",
+    "Mental health",
+    "Community outreach",
+    "Fundraising",
+    "Health promotion",
+    "Program development and evaluation",
+  ],
   authors: [
     {
       name: "Azla Jonuling",

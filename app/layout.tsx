@@ -1,16 +1,16 @@
 import "./globals.css";
 
-import { Metadata } from "next"
+import { Metadata } from "next";
 
-import { siteConfig } from "@/config/site"
-import { fontJosefin, fontSans } from "@/lib/fonts"
-import { cn } from "@/lib/utils"
-import { Analytics } from "@/components/analytics"
-import { ThemeProvider } from "@/components/providers"
-import { SiteFooter } from "@/components/site-footer"
-import { SiteHeader } from "@/components/site-header"
-import { TailwindIndicator } from "@/components/tailwind-indicator"
-import { ThemeSwitcher } from "@/components/theme-switcher"
+import { siteConfig } from "@/config/site";
+import { fontJosefin, fontSans } from "@/lib/fonts";
+import { cn } from "@/lib/utils";
+import { Analytics } from "@/components/analytics";
+import { ThemeProvider } from "@/components/providers";
+import { SiteFooter } from "@/components/site-footer";
+import { SiteHeader } from "@/components/site-header";
+import { TailwindIndicator } from "@/components/tailwind-indicator";
+import { ThemeSwitcher } from "@/components/theme-switcher";
 
 export const metadata: Metadata = {
   title: {
@@ -18,24 +18,15 @@ export const metadata: Metadata = {
     template: `%s - ${siteConfig.name}`,
   },
   description: siteConfig.description,
-  keywords: [
-    "Next.js",
-    "React",
-    "Tailwind CSS",
-    "Server Components",
-    "Radix UI",
-  ],
+  keywords: ["Public health", "Mental health"],
   authors: [
     {
-      name: "shadcn",
-      url: "https://shadcn.com",
+      name: "Azla Jonuling",
+      url: "https://azla.vercel.app",
     },
   ],
-  creator: "shadcn",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "white" },
-    { media: "(prefers-color-scheme: dark)", color: "black" },
-  ],
+  creator: "Azla Jonuling",
+  themeColor: [{ media: "(prefers-color-scheme: light)", color: "white" }],
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -65,10 +56,10 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   manifest: `${siteConfig.url}/site.webmanifest`,
-}
+};
 
 interface RootLayoutProps {
-  children: React.ReactNode
+  children: React.ReactNode;
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -100,5 +91,5 @@ export default function RootLayout({ children }: RootLayoutProps) {
         </body>
       </html>
     </>
-  )
+  );
 }

@@ -1,7 +1,7 @@
 export const siteConfig = {
     name: "Azla Jonuling",
-    url: "https://azmo.page",
-    ogImage: "https://ui.azmo.com/og.jpg",
+    url: "https://azla.vercel.app",
+    ogImage: "https://azla.vercel.app/og.png",
     description:
       "Craft your idea innovatively.",
     links: {
